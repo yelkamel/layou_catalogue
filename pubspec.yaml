@@ -1,0 +1,32 @@
+name: layou_catalogue
+description: A new Flutter project.
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^0.13.5
+  provider: ^4.0.5
+
+  cupertino_icons: ^0.1.2
+  uuid: ^2.0.4
+  carousel_slider: ^2.0.0
+  flutter_tags: "^0.4.8"
+  flutter_slidable: ^0.5.4
+  flushbar: 1.9.1
+
+dev_dependencies:
+  lint: ^1.1.1
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+
+  uses-material-design: true
