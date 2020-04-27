@@ -39,3 +39,5 @@ lib/generated_plugin_registrant.dart
 android/app/release/
 
 ios/Podfile.lock
+
+android/app/google-services.json

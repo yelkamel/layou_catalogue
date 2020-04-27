@@ -5,7 +5,7 @@ typedef ItemWidgetBuilder<T> = Widget Function(T item);
 typedef ReorderItem<T> = void Function(int oldIndex, int newIndex);
 
 class ReorderListBuilder<T> extends StatefulWidget {
-  ReorderListBuilder({
+  const ReorderListBuilder({
     Key key,
     @required this.snapshot,
     @required this.itemBuilder,
@@ -49,6 +49,8 @@ class _ReorderListBuilderState<T> extends State<ReorderListBuilder<T>> {
   Widget _buildList(List<T> items) {
     return ReorderableListView(
         onReorder: widget.onReorder,
-        children: [for (final item in items) widget.itemBuilder(item)]);
+        children: items.map((item) {
+          return widget.itemBuilder(item);
+        }).toList());
   }
 }
